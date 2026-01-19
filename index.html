@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Server</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-align: center;
+        }
+        
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            color: #155724;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .details-section h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .details-section ul {
+            list-style: none;
+        }
+        
+        .details-section li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+            color: #555;
+            font-size: 16px;
+        }
+        
+        .details-section li:last-child {
+            border-bottom: none;
+        }
+        
+        .details-section li strong {
+            color: #2c3e50;
+            display: inline-block;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Simple Web Server!</h1>
+        
+        <div class="success-box">
+            Success! Your Java Socket Web Server is working correctly.
+        </div>
+        
+        <div class="details-section">
+            <h2>Server Details</h2>
+            <ul>
+                <li><strong>Port:</strong> 8080</li>
+                <li><strong>Protocol:</strong> HTTP/1.1</li>
+                <li><strong>Technology:</strong> Java Socket Programming (TCP)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
